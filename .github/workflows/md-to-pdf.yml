@@ -1,0 +1,42 @@
+name: Convert Markdown to PDF
+
+on:
+  push:
+    paths:
+      - 'docs/README.md'
+  workflow_dispatch:  # 手動実行用のトリガー
+
+jobs:
+  convert_md_to_pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Install dependencies
+        run: |
+          npm install -g md-to-pdf
+
+      - name: Convert Markdown to PDF
+        run: |
+          mkdir -p output
+          md-to-pdf docs/README.md --config-file md-to-pdf.config.js --output output/職務経歴書.pdf
+
+      - name: Upload PDF as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: resume-pdf
+          path: output/職務経歴書.pdf
+          
+      - name: Commit and push PDF to repository
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add output/職務経歴書.pdf
+          git commit -m "Update PDF version of resume" || echo "No changes to commit"
+          git push origin HEAD:main || echo "No changes to push"
