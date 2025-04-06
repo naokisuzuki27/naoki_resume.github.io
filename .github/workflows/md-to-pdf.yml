@@ -13,22 +13,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Install dependencies
-        run: |
-          npm install -g md-to-pdf
-
-      - name: Create output directory
-        run: mkdir -p output
-
       - name: Convert Markdown to PDF
-        run: |
-          md-to-pdf docs/README.md --config-file md-to-pdf.config.js -o output/職務経歴書.pdf
+        uses: baileyjm02/markdown-to-pdf@v1
+        with:
+          input_path: docs
+          output_dir: output
+          images_dir: docs/images
+          build_html: false
+          theme: github.css
 
+      - name: Rename PDF file
+        run: |
+          mv output/README.pdf output/職務経歴書.pdf || echo "File not found"
+          
       - name: Upload PDF as artifact
         uses: actions/upload-artifact@v4
         with:
