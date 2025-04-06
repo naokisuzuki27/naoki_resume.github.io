@@ -1,2 +1,1 @@
-# naoki_resume.github.io
-職務経歴書
+作成中。。。
