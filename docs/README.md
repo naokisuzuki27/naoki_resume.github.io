@@ -36,14 +36,102 @@ OS設定のテストの際にRubyを使用したテストコードの開発経�
 Ciscoルータを使用したネットワークマイグレーション業務を担当し、切替時のトラブル対応や障害切り分けによる迅速な復旧を実現しました。
 
 ## 業務内容
+
 ### アルサーガパートナーズ株式会社（2025年4月～現在）
 
-| 期間 | 業務内容 | 環境 | 役割／規模 |
-|------|----------|------|-------------|
-| 2025年4月〜<br>現在 | **大手金融機関で利用する社員用アプリの要件定義・設計**<br><br><br>【担当】<br>・サービスの非機能要件部分のヒヤリング<br>・要件に沿ったAWSの設計<br><br>【業務詳細】<br>大手金融機関の社員用アプリの要件定義フェーズから携わり、インフラ基盤の設計・構築を担当。顧客の要件に沿ったインフラ基盤の設計やフロント側がNext.jsを利用していたため、CloudFront Functionsを使ったルーティング設計なども行なった。 | 【インフラ基盤】<br>Azure<br>【OS】<br>Linux<br>【DB】<br>Azure Cosmos DB<br>【サービス】<br>App Service<br>Cosmos DB<br>Azure OpenAI Service | 【役割】<br>技術チームのリーダー（技術チームは3人）<br><br>プロジェクト要員7名<br><br>【担当】<br>・予算見積り<br>・基本設計<br>・詳細設計 |
-| 2023年11月〜<br>2024年4月 | **金融機関への顧客専用の生成AIサービスの構築**<br>顧客が自社内で利用する生成AIサービスの導入<br><br>【担当】<br>・顧客の社内で利用するための生成AIサービスを提供<br>・Azure OpenAI Serviceと付随するインフラ基盤の構築<br>・プロジェクトの技術チームでのマネジメント（見積り、進捗管理）<br>【業務詳細】<br>基本設計から構築までを一貫して担当。Azure基盤部分をTerraformで構築し構築時間を短縮することができた。社内でもTerraformを使った構築実績が少なく、チーム内でコードの共有し他案件でも利用されたこと | 【インフラ基盤】<br>Azure<br>【OS】<br>Linux<br>【DB】<br>Azure Cosmos DB<br>【サービス】<br>App Service<br>Cosmos DB<br>Azure OpenAI Service | 【役割】<br>技術チームのリーダー（技術チームは3人）<br><br>プロジェクト要員7名<br><br>【担当】<br>・予算見積り<br>・基本設計<br>・詳細設計 |
-|------|----------|------|-------------|
-
+<table>
+  <thead>
+    <tr>
+      <th style="width: 15%;">期間</th>
+      <th style="width: 40%;">業務内容</th>
+      <th style="width: 25%;">環境</th>
+      <th style="width: 20%;">役割／規模</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <strong>2025年4月〜<br>現在</strong>
+      </td>
+      <td>
+        <h4>大手金融機関で利用する社員用アプリの要件定義・設計</h4>
+        
+        <p><strong>【担当】</strong></p>
+        <ul>
+          <li>サービスの非機能要件部分のヒヤリング</li>
+          <li>要件に沿ったAWSの設計</li>
+        </ul>
+        
+        <p><strong>【業務詳細】</strong></p>
+        <p>大手金融機関の社員用アプリの要件定義フェーズから携わり、インフラ基盤の設計・構築を担当。顧客の要件に沿ったインフラ基盤の設計やフロント側がNext.jsを利用していたため、CloudFront Functionsを使ったルーティング設計なども行なった。</p>
+      </td>
+      <td>
+        <p><strong>インフラ基盤:</strong> Azure</p>
+        <p><strong>OS:</strong> Linux</p>
+        <p><strong>DB:</strong> Azure Cosmos DB</p>
+        <p><strong>サービス:</strong><br>
+        • App Service<br>
+        • Cosmos DB<br>
+        • Azure OpenAI Service</p>
+      </td>
+      <td>
+        <p><strong>【役割】</strong><br>
+        技術チームのリーダー（技術チームは3人）</p>
+        
+        <p>プロジェクト要員7名</p>
+        
+        <p><strong>【担当】</strong></p>
+        <ul>
+          <li>予算見積り</li>
+          <li>基本設計</li>
+          <li>詳細設計</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>2023年11月〜<br>2024年4月</strong>
+      </td>
+      <td>
+        <h4>金融機関への顧客専用の生成AIサービスの構築</h4>
+        
+        <p>顧客が自社内で利用する生成AIサービスの導入</p>
+        
+        <p><strong>【担当】</strong></p>
+        <ul>
+          <li>顧客の社内で利用するための生成AIサービスを提供</li>
+          <li>Azure OpenAI Serviceと付随するインフラ基盤の構築</li>
+          <li>プロジェクトの技術チームでのマネジメント（見積り、進捗管理）</li>
+        </ul>
+        
+        <p><strong>【業務詳細】</strong></p>
+        <p>基本設計から構築までを一貫して担当。Azure基盤部分をTerraformで構築し構築時間を短縮することができた。社内でもTerraformを使った構築実績が少なく、チーム内でコードの共有し他案件でも利用されたこと</p>
+      </td>
+      <td>
+        <p><strong>インフラ基盤:</strong> Azure</p>
+        <p><strong>OS:</strong> Linux</p>
+        <p><strong>DB:</strong> Azure Cosmos DB</p>
+        <p><strong>サービス:</strong><br>
+        • App Service<br>
+        • Cosmos DB<br>
+        • Azure OpenAI Service</p>
+      </td>
+      <td>
+        <p><strong>【役割】</strong><br>
+        技術チームのリーダー（技術チームは3人）</p>
+        
+        <p>プロジェクト要員7名</p>
+        
+        <p><strong>【担当】</strong></p>
+        <ul>
+          <li>予算見積り</li>
+          <li>基本設計</li>
+          <li>詳細設計</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 #### プロジェクト概要
 AWS環境の基盤設計とCI/CD環境の整備
@@ -70,8 +158,7 @@ AWS環境の基盤設計とCI/CD環境の整備
 
 また、nginxを用いたプロキシサーバーの構成設計（Dockerfileおよびnginx.confの作成含む）も行いました。サービスの成長に伴い、スケーラビリティや可用性を考慮した設計への移行を主導し、コストの最適化と安定したパフォーマンスの両立を実現しました。
 
-
- 株式会社協栄情報 （2024年7月～ 2025年3月）
+### 株式会社協栄情報 （2024年7月～ 2025年3月）
 
 #### 大手損害保険会社にてAWS基盤のOSverUP自動化対応 （2024年7月～2025年3月）
 
