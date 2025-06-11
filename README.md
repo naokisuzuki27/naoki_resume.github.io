@@ -8,7 +8,7 @@ naokisuzuki27の職務経歴書
 
 - [naokisuzuki27の職務経歴書](#naokisuzuki27の職務経歴書)
   - [基本情報](#基本情報)
-  - [職務経歴](#職務経歴本業)
+  - [職務経歴](#職務経歴)
     - [アルサーガパートナーズ株式会社](#アルサーガパートナーズ株式会社)
       - [所属・役職](#所属役職)
       - [主なプロジェクト](#主なプロジェクト)
@@ -23,26 +23,20 @@ naokisuzuki27の職務経歴書
 |---|-----|
 |氏名|鈴木 尚毅 (スズキ ナオキ)|
 |生年月日|1998年12月27日|
-|連絡先|XかMessengerかYOUTRUSTでご連絡ください。|
+
 
 <br>
 
-SNS
+職務経歴
 -------
-|Name|URL|
-|---|-----|
-|X|https://x.com/_tinoji|
-|YOUTRUST|https://youtrust.jp/users/0829a66da2c7906de8b440bc0be208c0|
-|LAPRAS|https://lapras.com/public/DA4JKIN|
-|Qiita|https://qiita.com/tinoji|
-|Zenn|https://zenn.dev/tinoji|
-|Speaker Deck|https://speakerdeck.com/tinoji|
-|Facebook|https://www.facebook.com/hiroaki.tinoji.kikuchi|
+|期間|会社|職種|
+|---|-----|-----|
+|2025年4月〜現在|アルサーガパートナーズ株式会社|クラウドエンジニア|
+|2024年7月〜2025年3月|株式会社協栄情報|クラウドエンジニア|
+|2023年9月〜2024年6月|株式会社リクルートスタッフィング(ソフトバンク株式会社)|ネットワークエンジニア|
+|2021年4月〜2023年8月|ナガイレーベン株式会社|営業|
 
-<br>
 
-職務経歴(本業)
--------
 ### 株式会社ニーリー
 【期間】2021/11 - 現在  
 【事業内容】月極駐車場SaaS  
