@@ -1,8 +1,8 @@
 tinojiの職務経歴書
 ======
-[@tinoji](https://github.com/tinoji)の職務経歴やスキルなどをまとめたページです。
+[@naokisuzuki27](https://github.com/naokisuzuki27)の職務経歴やスキルなどをまとめたページです。
 
-**表が狭くて見にくい場合は[GitHub Pages](https://tinoji.github.io/resume/)をご覧ください。**
+**表が狭くて見にくい場合は[GitHub Pages](https://naokisuzuki27.github.io/naoki_resume.github.io/)をご覧ください。**
 
 <br>
 
