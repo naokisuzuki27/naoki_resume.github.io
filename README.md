@@ -8,21 +8,10 @@ naokisuzuki27の職務経歴書
 
 - [naokisuzuki27の職務経歴書](#naokisuzuki27の職務経歴書)
   - [基本情報](#基本情報)
-  - [SNS](#sns)
-  - [職務経歴(本業)](#職務経歴本業)
-    - [株式会社ニーリー](#株式会社ニーリー)
-    - [合同会社DMM.com](#合同会社dmmcom)
+  - [職務経歴](#職務経歴本業)
+    - [アルサーガパートナーズ株式会社](#アルサーガパートナーズ株式会社)
       - [所属・役職](#所属役職)
       - [主なプロジェクト](#主なプロジェクト)
-      - [その他の取り組み](#その他の取り組み)
-        - [採用](#採用)
-        - [社内エバンジェリスト](#社内エバンジェリスト)
-        - [その他](#その他)
-  - [職務経歴(副業)](#職務経歴副業)
-    - [株式会社MINT STUDIO](#株式会社mint-studio)
-      - [プロジェクト](#プロジェクト)
-    - [株式会社アダコテック](#株式会社アダコテック)
-      - [プロジェクト](#プロジェクト-1)
   - [スキル・経験](#スキル経験)
   - [資格など](#資格など)
 
@@ -150,101 +139,27 @@ SNS
 
 <br>
 
-
-登壇
--------
-|Date|Event|Type|Slide|
-|---|---|---|---|
-|2024/4/23|[学生向けサイバーセキュリティイベント「P3NFEST」を振り返る会](https://boost.connpass.com/event/315282/)|パネルディスカッション(20分)|-|
-|2019/6/12|[Media-JAWS #2](https://media-jaws.doorkeeper.jp/events/91677)|セッション(10分)|[VODのディザスタリカバリをAWSで考えてみる](https://speakerdeck.com/tinoji/vodfalsedeizasutarikabariwoawsdekao-etemiru)|
-|2019/4/24|[Media-JAWS #1](https://media-jaws.doorkeeper.jp/events/89643)|LT(10分)|[ちょっと冷や汗かいたけどAWS MediaLiveは最高！って話 - Speaker Deck](https://speakerdeck.com/tinoji/tiyotutoleng-yahan-kaitakedoaws-medialivehazui-gao-tutehua)|
-|2018/12/17|[第4回 HashiCorp User Group Meetup](https://hashicorp.connpass.com/event/110653/)|セッション(20分)|[DMM動画の可用性を支えるConsul - Speaker Deck](https://speakerdeck.com/tinoji/dmmdong-hua-falseke-yong-xing-wozhi-eruconsul)|
-
-<br>
-
-
-執筆
--------
-|Date|Article|
-|---|---|
-|2024/5|[学生向けバグバウンティイベント P3NFEST にプログラムを提供しました！](https://nealle-dev.hatenablog.com/entry/2024/05/07/170601)|
-|2024/3|[ニーリーのテックブログを始めました！](https://nealle-dev.hatenablog.com/entry/2024/03/26/101533)|
-|2023/12|[ニーリーのSREによるリリースサイクルの改善〜「隔週深夜1回→1日2回」にリリース頻度を向上させた道のり〜](https://note.nealle.com/n/nf273f989ee3c)|
-|2023/12|[SREチーム発足から2年間の取り組み〜急成長するモビリティSaaSで信頼性とアジリティの両立を目指す～](https://note.nealle.com/n/n530c5238836d)|
-|2023/10|[去年SREチームで合宿に行ってました〜1年後どんな効果が得られたのかレポ〜](https://note.nealle.com/n/n2b919c485b60)|
-|2023/5|[エンジニア対談　開発組織の魅力”熱量と冷静さの共存”とは？](https://note.nealle.com/n/nf9411dddf5fc)|
-|2019/5|[慶應義塾大学KCSxDMM 合同LT会レポート](https://inside.dmm.com/entry/2019/05/22/kcs-dmm-lt)|
-|2018/10|[DMM動画サービスの問題を解決しようとしている話（再生URL生成API編）](https://inside.dmm.com/entry/2018/10/17/create-playurl)|
-
-<br>
-
-
-取材記事など
--------
-|Date|Article|
-|---|---|
-|2022/7|[「ニーリーでエンジニアをしたい」そう思われる組織を作りたい。DMMからニーリーへジョイン。開発チームリーダーの菊地さんへインタビュー](https://note.nealle.com/n/n9c54c21ace05)|
-|2020/1|[よんでますよ、野秋さん #4 (対談)](https://inside.dmm.com/entry/2020/01/23/yondemasu04)|
-|2019/7|[Media-JAWSで聞いた視聴者参加型コンテンツとVODの災害対策](https://ascii.jp/elem/000/001/893/1893281/)|
-
-<br>
-
-
 スキル・経験
 ---------
 [スキルリスト](/skills.md)
 
 <br>
 
-
 資格など
 -------------
-|Certification|Certificate|
-|---|---|
-|CKAD: Certified Kubernetes Application Developer|[Link](https://www.credly.com/badges/346aa6dc-d059-4f44-bf62-49994f99c86e/public_url)|
-|Google Cloud Professional Cloud Developer|[Link](https://www.credential.net/rbcqalqj?key=6f5f55cc13928d328ea559bc0f5aec9d2be1104a14d13295addec1e13a667dba)|
-|Developing Applications with Google Cloud Platform (Coursera Specialization)|[Link](https://www.coursera.org/account/accomplishments/specialization/669HPPL75RD5)|
-|Machine Learning (Coursera Course)|[Link](https://www.coursera.org/account/accomplishments/verify/EDCWDNN9AHNJ)|
-|基本情報処理技術者|第FE-2015-10-11665号|
-|日商簿記検定試験 3級|144の3第23704|
-|Oracle Certified Java Programmer, Bronze SE 7/8|249061807BRZSE78JPN|
-|TOEIC total score: 830||
+|No|Certification|Certificate|
+|---|---|---|
+|1|Databricks Certified Data Engineer Associate|[Link](https://credentials.databricks.com/6f0165cc-0341-4fcb-a0a5-a7a368e6bd69#acc.BA0MowNU)|
+|2|AWS Certified Security – Specialty|[Link](https://www.credly.com/badges/653aaf3b-4a57-4de8-b9c4-b00291de14a5)|
+|3|AWS Certified SysOps Administrator – Associate|[Link](https://www.credly.com/badges/700eb3d5-e5a6-4712-9b2a-269e34987b17)|
+|4|AWS Certified DevOps Engineer – Professional|[Link](https://www.credly.com/badges/623fa0c4-9c3a-46f4-81c1-c4d8bf8aa1dd)|
+|5|AWS Certified Developer – Associate|[Link](hhttps://www.credly.com/badges/bb54ba51-a50c-4435-a8de-dc48c3e8277d)|
+|6|AWS Certified Solutions Architect – Professional|[Link](https://www.credly.com/badges/d59e8494-24d2-4c9a-a118-0af0bd61d086)|
+|7|AWS Certified Solutions Architect – Associate|[Link](https://www.credly.com/badges/149a99dd-9930-4bc1-b3f5-0a071d39efe1)|
+|8|AWS Certified Cloud Practitioner|[Link](https://www.credly.com/badges/375d6392-db90-4b31-aad1-629f607e60e2)|
+|9|LPIC1|[Link](https://www.credly.com/badges/7391e201-5cdf-41d4-824d-512ae13e5816/public_url)|
+|10|CCNA|[Link](https://www.credly.com/badges/002f75d7-ea68-468d-a759-a26f45c82d7e)|
 
 <br>
 
 
-学歴/研究
---------
-### 2015/04 - 2017/03 京都大学農学研究科 森林科学専攻 生物繊維学研究室
-- 修士論文
-  - 『in-situ 磁場配向を用いたタンパク質微結晶のＸ線単結晶構造解析』
-- 受賞
-  - 2016年11月，第11回日本磁気科学会年会 ポスター賞
-- 学会発表
-  - 2015年10月，日本結晶学会年会，ポスター発表 PB-009
-  - 2015年10月，日本結晶学会年会，口頭発表 17-OB-06
-  - October 2015, International Conference on Magneto-Science, Oral Presentation 2O05
-  - June 2016, 15th European Powder Diffraction Conference, Oral Presentation MS03-O3
-  - 2016年11月，第11回日本磁気科学会年会，ポスター発表 P-13
-  - November 2016, International Workshop on Recent Progress of Magneto-Science, International Session I-03
-  - March 2017, BIT's 5th Annual Conference of AnalytiX
-- その他
-  - 大型放射光施設SPring-8 2016年大学院生提案型課題採択，課題番号：2016A2698/2016B2698
-
-
-### 2011/04 - 2015/03 京都大学農学部 森林科学科
-- 投稿論文
-  - [Crystal System Determination from X-ray Diffraction of Magnetically Oriented Microcrystal Suspensions](https://pubs.acs.org/doi/abs/10.1021/cg501357b)
-- その他
-  - 2014年8月, 世界結晶年 対称性・群論トレーニングコース修了 ＠高エネルギー加速器研究機構
-
-<br>
-
-
-趣味・好きなもの
--------------
-- ラジオ
-- 二郎系
-- 温泉・銭湯
-- 坂道グループ
-- 登山
