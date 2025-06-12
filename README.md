@@ -80,7 +80,7 @@ naokisuzuki27の職務経歴書
 |2|AWS Certified Security – Specialty|[Link](https://www.credly.com/badges/653aaf3b-4a57-4de8-b9c4-b00291de14a5)|
 |3|AWS Certified SysOps Administrator – Associate|[Link](https://www.credly.com/badges/700eb3d5-e5a6-4712-9b2a-269e34987b17)|
 |4|AWS Certified DevOps Engineer – Professional|[Link](https://www.credly.com/badges/623fa0c4-9c3a-46f4-81c1-c4d8bf8aa1dd)|
-|5|AWS Certified Developer – Associate|[Link](hhttps://www.credly.com/badges/bb54ba51-a50c-4435-a8de-dc48c3e8277d)|
+|5|AWS Certified Developer – Associate|[Link](https://www.credly.com/badges/bb54ba51-a50c-4435-a8de-dc48c3e8277d)|
 |6|AWS Certified Solutions Architect – Professional|[Link](https://www.credly.com/badges/d59e8494-24d2-4c9a-a118-0af0bd61d086)|
 |7|AWS Certified Solutions Architect – Associate|[Link](https://www.credly.com/badges/149a99dd-9930-4bc1-b3f5-0a071d39efe1)|
 |8|AWS Certified Cloud Practitioner|[Link](https://www.credly.com/badges/375d6392-db90-4b31-aad1-629f607e60e2)|
