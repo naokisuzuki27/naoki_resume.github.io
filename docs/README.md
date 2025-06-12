@@ -118,9 +118,20 @@ SNS
 
 <!-- ######################################################################################################################## -->
 
-スキル・経験
+テクニカルスキル
 ---------
-[スキルリスト](/)
+|項目|サービス|説明|
+|---|---|---|
+|**OS**|Amazon Linux2023<br>RHEL9|システム設計から構築・運用まで担当|
+|**言語**|Shell(Bash)<br>Ruby|自動化スクリプト作成、cron設定、環境変数管理<br>Rspecを使用したテスト自動化コード開発経験|
+|**DB**|MySQL<br>PostgreSQL<br>MariaDB|データベース設計・構築、テーブル作成・操作、インデックス最適化、基本的なクエリチューニングが可能|
+|**Webサーバー**|Nginx|設定ファイル編集によるプロキシサーバー構築<br>リバースプロキシ・ロードバランシング設定|
+|**クラウド**|AWS<br>GCP|システム設計から構築・運用まで担当<br>基本的な構築が可能|
+|**AWS**|EC2<br>ECS<br>S3<br>VPC<br>IAM<br>RDS<br>Cloudwatch<br>SystemsManager<br>Route53<br>Codeシリーズ<br>EventBridge<br>EFS<br>SNS<br>SES<br>Lambda<br>ACM<br>Secrets Manager<br>Backup<br>CloudFront<br>Kinesis<br>CloudTrail<br>AutoScaling<br>ELB<br>CloudFormation<br>Cloudshell<br>WAF|使用経験のあるサービスを列挙|
+|**Infrastructure as Code**|Ansible<br>Terraform|OS自動化設定用のテンプレートコード開発<br>AWS環境の初期構築から運用まで対応|
+|**コンテナ技術**|Docker|Dockerfile・Docker Compose作成<br>基本的なDockerコマンド操作・ログ分析|
+|**バージョン管理**|GitHub<br>GitLab|チーム開発でのソースコード管理<br>ブランチ戦略・運用ルール策定経験|
+|**CI/CD**|GitHub Actions|EC2・ECSへのフロント・サーバーデプロイ自動化<br>パイプライン構築・運用経験|
 
 <br>
 
