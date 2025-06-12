@@ -1,8 +1,6 @@
 naokisuzuki27の職務経歴書
 ======
-[@naokisuzuki27](https://github.com/naokisuzuki27)の職務経歴やスキルなどをまとめたページです。
-
-**表が狭くて見にくい場合は[GitHub Pages](https://naokisuzuki27.github.io/naoki_resume.github.io/)をご覧ください。**
+最終更新日:2025/6/12
 
 <br>
 
