@@ -27,9 +27,9 @@ naokisuzuki27の職務経歴書
 -------
 |Name|URL|
 |---|---|
-|X|[Link](https://x.com/iam_naoki27)|
-|Qiita|[Link](https://qiita.com/naoki_note)|
-|wantedly|[Link](https://www.wantedly.com/id/naoki27suzuki1227)|
+|X|https://x.com/iam_naoki27|
+|Qiita|https://qiita.com/naoki_note|
+|wantedly|https://www.wantedly.com/id/naoki27suzuki1227|
 
 □職務経歴
 -------
@@ -47,24 +47,26 @@ naokisuzuki27の職務経歴書
 -----
 **■ 期間** : 2025/4〜現在 インフラDiv(クラウドエンジニア) 
 
-#### プロジェクト1：大手損害保険会社にてAWS基盤のOSverUP自動化対応
+#### プロジェクト3：AWSの基盤構築やインフラコスト削減や運用改善対応
 |期間|担当|インフラ環境|内容|
 |---|---|---|---|
-|2024/7〜2025/3|メンバー(インフラ6名)|AWS|Ansible,Rubyを活用したOS設定自動化およびテスト、新規EC2構築によるAWSインフラ構成変更を担当|
+|2024/4〜現在|メンバー(インフラ1名)|AWS|自社サービスのAWS基盤上で稼働しているサービスの新規構築およびコスト改善や運用改善対応を実施|
 
 #### 業務詳細
-**■ インフラ基盤設計・構築**
-- AWS上のOSバージョンアップ自動化において、設計から構築まで担当
-- 現行環境の構成調査、構成図・設計書作成
+**■ インフラ基盤構築・設計**
+- 自社AIサービスのAWS基盤構築・運用
+- ECS・ACM・ALB・CloudFront・RDSを用いたアプリケーション環境構築
+- Terraformを使用したインフラ環境の設計・構築
 
-**■ 自動化ツール開発**
-- 設計書からAWS CLIコマンドへの自動変換機能実装(マクロ)
-- OS設定自動化のためのAnsibleのテンプレートコードの開発および実装
-- Rubyを使用したAWSリソース・OSテスト自動化のためのテンプレートコードの開発および実装
+**■ 運用改善・コスト最適化**
+- RDS・ECSの夜間休日自動停止によるコスト削減
+- CI/CDパイプラインのエラーログ詳細化・改善
+- GitHub ActionsによるCI/CD構築・運用
 
-**■ 開発運用体制整備**
-- GitHubを使用したソースコード管理およびブランチ戦略・運用ルール策定
-- チーム開発効率化のためのドキュメント整備
+**■ コード品質向上・保守性改善**
+- Terraformコードのリファクタリング実施
+- 変数名統一・別サービスコード混在の解消
+- 他チームからの技術問い合わせ対応・サポート
 
 <!-- ######################################################################################################################## -->
 ---
@@ -153,7 +155,7 @@ naokisuzuki27の職務経歴書
 |**言語**|Shell(Bash)<br>Ruby|自動化スクリプト作成、cron設定、環境変数管理<br>Rspecを使用したテスト自動化コード開発経験|
 |**DB**|MySQL<br>PostgreSQL<br>MariaDB|データベース設計・構築、テーブル作成・操作、インデックス最適化、基本的なクエリチューニングが可能|
 |**Webサーバー**|Nginx|設定ファイル編集によるプロキシサーバー構築<br>リバースプロキシ・ロードバランシング設定|
-|**クラウド**|AWS<br>GCP|システム設計から構築・運用まで担当<br>基本的な操作が可能|
+|**クラウド**|AWS<br>GCP<br>Firebase|システム設計から構築・運用まで担当<br>基本的な操作が可能<br>認証機能の実装経験|
 |**AWS**|EC2・ECS・S3・VPC・IAM・<br>RDS・Cloudwatch・SystemsManager・<br>Route53・Codeシリーズ・EventBridge・<br>EFS・SNS・SES・Lambda・ACM・<br>Secrets Manager・Backup・CloudFront・<br>Kinesis・CloudTrail・AutoScaling・<br>ELB・CloudFormation・Cloudshell・WAF|使用経験のあるサービスを列挙|
 |**Infrastructure as Code**|Ansible<br>Terraform|OS自動化設定用のテンプレートコード開発<br>AWS環境の初期構築から運用まで対応|
 |**コンテナ技術**|Docker|Dockerfile・Docker Compose作成<br>基本的なDockerコマンド操作・ログ分析|
@@ -176,7 +178,3 @@ naokisuzuki27の職務経歴書
 |8|AWS Certified Cloud Practitioner|[Link](https://www.credly.com/badges/375d6392-db90-4b31-aad1-629f607e60e2)|
 |9|LPIC-1 Certification|[Link](https://www.credly.com/badges/7391e201-5cdf-41d4-824d-512ae13e5816/public_url)|
 |10|Cisco Certified Network Associate|[Link](https://www.credly.com/badges/002f75d7-ea68-468d-a759-a26f45c82d7e)|
-
-<br>
-
-
