@@ -31,7 +31,7 @@
 |Qiita|https://qiita.com/naoki_note|
 |wantedly|https://www.wantedly.com/id/naoki27suzuki1227|
 |youtrust|https://youtrust.jp/users/naoki27suzuki|
-|wantedly|https://www.wantedly.com/id/naoki27suzuki1227|
+|linkedin|https://www.linkedin.com/in/%E5%B0%9A%E6%AF%85-%E9%88%B4%E6%9C%A8-482273355/|
 
 ## 職務経歴
 
