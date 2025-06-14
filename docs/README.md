@@ -30,6 +30,8 @@
 |X|https://x.com/iam_naoki27|
 |Qiita|https://qiita.com/naoki_note|
 |wantedly|https://www.wantedly.com/id/naoki27suzuki1227|
+|youtrust|https://youtrust.jp/users/naoki27suzuki|
+|wantedly|https://www.wantedly.com/id/naoki27suzuki1227|
 
 ## 職務経歴
 
@@ -74,7 +76,7 @@
 
 |期間|担当|インフラ環境|内容|
 |---|---|---|---|
-|2024/4〜現在|メンバー(インフラ1名)|AWS|自社サービスのAWS基盤上で稼働しているサービスの新規構築およびコスト改善や運用改善対応を実施|
+|2024/4〜現在|メンバー(インフラ1名)|AWS|自社サービスのAWS基盤の新規構築およびコスト改善や運用改善対応を実施|
 
 ### 業務詳細
 
