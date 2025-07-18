@@ -47,11 +47,49 @@
 ## アルサーガパートナーズ株式会社
 
 **期間**: 2025/4〜現在 インフラDiv(クラウドエンジニア)
-### プロジェクト1：大手金融機関で利用する社員用アプリの設計~運用保守対応
+### プロジェクト1：教育・介護サービス会社のHRサービスのインフラ要件定義・設計・構築
 
 |期間|担当|インフラ環境|内容|
 |---|---|---|---|
-|2024/4〜現在|メンバー(インフラ2名)|AWS|AWS基盤の設計および構築、運用保守対応を実施|
+|2025/7〜現在|メンバー(インフラ1名)|Azure|医療従事者向け派遣サイトのAzure基盤設計|
+
+### 業務詳細
+
+**インフラ要件定義・設計**
+- Azure Container Instances・Azure Web Application Firewall・Azure Application Gateway・Azure Front Door・Azure Database for MySQLを用いたAzure基盤のアプリケーション環境設計
+- インフラ要件定義・非機能要件定義
+- Terraformを使用したインフラ環境の設計
+
+---
+### プロジェクト2：準大手ゼネコンのマンション売買予約管理システムおよび分析基盤の設計・構築
+
+|期間|担当|インフラ環境|内容|
+|---|---|---|---|
+|2025/7〜現在|メンバー(インフラ1名)|AWS|マンション売買管理システムのAWSインフラ・分析基盤設計|
+
+### 業務詳細
+
+**インフラ基盤構築・設計**
+- ECS・WAF・ALB・CloudFront・RDSを用いたAWS基盤のアプリケーション環境構築
+- Step Function・Eventbridge・Glue・Redshiftを使用したコンバージョンデータ分析基盤の設計
+- Terraformを使用したインフラ環境の設計・構築
+
+**非機能要件定義**
+- 監視設定・ログ保管期間の策定
+- 脆弱性対策によるWAFの導入
+- 分析基盤のセキュリティ対応
+
+**保守性改善・コスト最適化**
+- Redshift Serverlessへの検討
+- ログ保管をCloudwatch LogsからS3への移行
+- 他チームからの技術問い合わせ対応・サポート
+
+---
+### プロジェクト3：大手金融機関で利用する社員用アプリの設計~運用保守対応
+
+|期間|担当|インフラ環境|内容|
+|---|---|---|---|
+|2025/4〜現在|メンバー(インフラ2名)|AWS|AWS基盤の設計および構築、運用保守対応を実施|
 
 ### 業務詳細
 
@@ -72,11 +110,11 @@
 
 ---
 
-### プロジェクト2：AWSの基盤構築やインフラコスト削減や運用改善対応
+### プロジェクト4：AWSの基盤構築やインフラコスト削減や運用改善対応
 
 |期間|担当|インフラ環境|内容|
 |---|---|---|---|
-|2024/4〜現在|メンバー(インフラ1名)|AWS|自社サービスのAWS基盤の新規構築およびコスト改善や運用改善対応を実施|
+|2025/4〜現在|メンバー(インフラ1名)|AWS|自社サービスのAWS基盤の新規構築およびコスト改善や運用改善対応を実施|
 
 ### 業務詳細
 
@@ -183,13 +221,13 @@
 |**言語**|Shell(Bash)<br>Ruby|自動化スクリプト作成、cron設定、環境変数管理<br>Rspecを使用したテスト自動化コード開発経験|
 |**DB**|MySQL<br>PostgreSQL<br>MariaDB|データベース設計・構築、テーブル作成・操作、インデックス最適化、基本的なクエリチューニングが可能|
 |**Webサーバー**|Nginx|設定ファイル編集によるプロキシサーバー構築<br>リバースプロキシ・ロードバランシング設定|
-|**クラウド**|AWS<br>GCP<br>Firebase|システム設計から構築・運用まで担当<br>基本的な操作が可能<br>認証機能の実装経験|
-|**AWS**|EC2・ECS・S3・VPC・IAM・<br>RDS・Cloudwatch・SystemsManager・<br>Route53・Codeシリーズ・EventBridge・<br>EFS・SNS・SES・Lambda・ACM・<br>Secrets Manager・Backup・CloudFront・<br>Kinesis・CloudTrail・AutoScaling・<br>ELB・CloudFormation・Cloudshell・WAF|使用経験のあるサービスを列挙|
+|**クラウド**|AWS<br>Azure<br>GCP<br>Firebase|システム設計から構築・運用まで担当<br>基本的な操作が可能<br>認証機能の実装経験|
+|**AWS**|EC2・ECS・S3・VPC・IAM・<br>RDS・Cloudwatch・SystemsManager・<br>Route53・Codeシリーズ・EventBridge・<br>EFS・SNS・SES・Lambda・ACM・<br>Secrets Manager・Backup・CloudFront・<br>Kinesis・CloudTrail・AutoScaling・<br>ELB・CloudFormation・Cloudshell・WAF・<br>Redshift・Glue・<br>Step Function|使用経験のあるサービスを列挙|
 |**Infrastructure as Code**|Ansible<br>Terraform|OS自動化設定用のテンプレートコード開発<br>AWS環境の初期構築から運用まで対応|
 |**コンテナ技術**|Docker|Dockerfile・Docker Compose作成<br>基本的なDockerコマンド操作・ログ分析|
 |**バージョン管理**|GitHub<br>GitLab|チーム開発でのソースコード管理<br>ブランチ戦略・運用ルール策定経験|
 |**CI/CD**|GitHub Actions|EC2・ECSへのフロント・サーバーデプロイ自動化<br>パイプライン構築・運用経験|
-
+|**モニタリングツール**|NewRelic|アラート設定|
 ---
 
 ## 資格など
