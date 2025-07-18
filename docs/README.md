@@ -13,6 +13,7 @@
 - [株式会社リクルートスタッフィング(ソフトバンク株式会社)](#株式会社リクルートスタッフィングソフトバンク株式会社)
 - [テクニカルスキル](#テクニカルスキル)
 - [資格など](#資格など)
+- [社外](#社外)
 
 ---
 
@@ -244,3 +245,8 @@
 |8|AWS Certified Cloud Practitioner|[Link](https://www.credly.com/badges/375d6392-db90-4b31-aad1-629f607e60e2)|
 |9|LPIC-1 Certification|[Link](https://www.credly.com/badges/7391e201-5cdf-41d4-824d-512ae13e5816/public_url)|
 |10|Cisco Certified Network Associate|[Link](https://www.credly.com/badges/002f75d7-ea68-468d-a759-a26f45c82d7e)|
+
+## 社外活動
+|日付|内容|
+|---|---|
+|2025/07|SRE NEXT staff|
