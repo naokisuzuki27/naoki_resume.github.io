@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>README.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="naokisuzuki27%E3%81%AE%E8%81%B7%E5%8B%99%E7%B5%8C%E6%AD%B4%E6%9B%B8">naokisuzuki27の職務経歴書</h1>
+<p>最終更新日: 2025/6/15</p>
+<hr>
+<h2 id="%E7%9B%AE%E6%AC%A1">目次</h2>
+<ul>
+<li><a href="#%E5%9F%BA%E6%9C%AC%E6%83%85%E5%A0%B1">基本情報</a></li>
+<li><a href="#%E8%81%B7%E5%8B%99%E7%B5%8C%E6%AD%B4">職務経歴</a></li>
+<li><a href="#%E3%82%A2%E3%83%AB%E3%82%B5%E3%83%BC%E3%82%AC%E3%83%91%E3%83%BC%E3%83%88%E3%83%8A%E3%83%BC%E3%82%BA%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE">アルサーガパートナーズ株式会社</a></li>
+<li><a href="#%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E5%8D%94%E6%A0%84%E6%83%85%E5%A0%B1">株式会社協栄情報</a></li>
+<li><a href="#%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%AA%E3%82%AF%E3%83%AB%E3%83%BC%E3%83%88%E3%82%B9%E3%82%BF%E3%83%83%E3%83%95%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%BD%E3%83%95%E3%83%88%E3%83%90%E3%83%B3%E3%82%AF%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE">株式会社リクルートスタッフィング(ソフトバンク株式会社)</a></li>
+<li><a href="#%E3%83%86%E3%82%AF%E3%83%8B%E3%82%AB%E3%83%AB%E3%82%B9%E3%82%AD%E3%83%AB">テクニカルスキル</a></li>
+<li><a href="#%E8%B3%87%E6%A0%BC%E3%81%AA%E3%81%A9">資格など</a></li>
+</ul>
+<hr>
+<h2 id="%E5%9F%BA%E6%9C%AC%E6%83%85%E5%A0%B1">基本情報</h2>
+<table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>氏名</td>
+<td>鈴木 尚毅 (スズキ ナオキ)</td>
+</tr>
+<tr>
+<td>生年月日</td>
+<td>1998/12/27</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sns">SNS</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>X</td>
+<td>https://x.com/iam_naoki27</td>
+</tr>
+<tr>
+<td>Qiita</td>
+<td>https://qiita.com/naoki_note</td>
+</tr>
+<tr>
+<td>wantedly</td>
+<td>https://www.wantedly.com/id/naoki27suzuki1227</td>
+</tr>
+<tr>
+<td>youtrust</td>
+<td>https://youtrust.jp/users/naoki27suzuki</td>
+</tr>
+<tr>
+<td>linkedin</td>
+<td>https://www.linkedin.com/in/%E5%B0%9A%E6%AF%85-%E9%88%B4%E6%9C%A8-482273355/</td>
+</tr>
+</tbody>
+</table>
+<h2 id="%E8%81%B7%E5%8B%99%E7%B5%8C%E6%AD%B4">職務経歴</h2>
+<table>
+<thead>
+<tr>
+<th>期間</th>
+<th>会社</th>
+<th>職種</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025/4〜現在</td>
+<td>アルサーガパートナーズ株式会社</td>
+<td>クラウドエンジニア</td>
+</tr>
+<tr>
+<td>2024/7〜2025/3</td>
+<td>株式会社協栄情報</td>
+<td>クラウドエンジニア</td>
+</tr>
+<tr>
+<td>2023/9〜2024/6</td>
+<td>株式会社リクルートスタッフィング(ソフトバンク株式会社)</td>
+<td>ネットワークエンジニア</td>
+</tr>
+<tr>
+<td>2021/4〜2023/8</td>
+<td>ナガイレーベン株式会社</td>
+<td>営業</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="%E3%82%A2%E3%83%AB%E3%82%B5%E3%83%BC%E3%82%AC%E3%83%91%E3%83%BC%E3%83%88%E3%83%8A%E3%83%BC%E3%82%BA%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE">アルサーガパートナーズ株式会社</h2>
+<p><strong>期間</strong>: 2025/4〜現在 インフラDiv(クラウドエンジニア)</p>
+<h3 id="%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%881%E6%95%99%E8%82%B2%E3%83%BB%E4%BB%8B%E8%AD%B7%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E4%BC%9A%E7%A4%BE%E3%81%AEhr%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%81%AE%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9%E8%A6%81%E4%BB%B6%E5%AE%9A%E7%BE%A9%E3%83%BB%E8%A8%AD%E8%A8%88%E3%83%BB%E6%A7%8B%E7%AF%89">プロジェクト1：教育・介護サービス会社のHRサービスのインフラ要件定義・設計・構築</h3>
+<table>
+<thead>
+<tr>
+<th>期間</th>
+<th>担当</th>
+<th>インフラ環境</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025/7〜現在</td>
+<td>メンバー(インフラ1名)</td>
+<td>Azure</td>
+<td>医療従事者向け派遣サイトのAzure基盤設計</td>
+</tr>
+</tbody>
+</table>
+<h3 id="%E6%A5%AD%E5%8B%99%E8%A9%B3%E7%B4%B0">業務詳細</h3>
+<p><strong>インフラ要件定義・設計</strong></p>
+<ul>
+<li>Azure Container Instances・Azure Web Application Firewall・Azure Application Gateway・Azure Front Door・Azure Database for MySQLを用いたAzure基盤のアプリケーション環境設計</li>
+<li>インフラ要件定義・非機能要件定義</li>
+<li>Terraformを使用したインフラ環境の設計</li>
+</ul>
+<hr>
+<h3 id="%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%882%E6%BA%96%E5%A4%A7%E6%89%8B%E3%82%BC%E3%83%8D%E3%82%B3%E3%83%B3%E3%81%AE%E3%83%9E%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%E5%A3%B2%E8%B2%B7%E4%BA%88%E7%B4%84%E7%AE%A1%E7%90%86%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%8A%E3%82%88%E3%81%B3%E5%88%86%E6%9E%90%E5%9F%BA%E7%9B%A4%E3%81%AE%E8%A8%AD%E8%A8%88%E3%83%BB%E6%A7%8B%E7%AF%89">プロジェクト2：準大手ゼネコンのマンション売買予約管理システムおよび分析基盤の設計・構築</h3>
+<table>
+<thead>
+<tr>
+<th>期間</th>
+<th>担当</th>
+<th>インフラ環境</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025/7〜現在</td>
+<td>メンバー(インフラ1名)</td>
+<td>AWS</td>
+<td>マンション売買管理システムのAWSインフラ・分析基盤設計</td>
+</tr>
+</tbody>
+</table>
+<h3 id="%E6%A5%AD%E5%8B%99%E8%A9%B3%E7%B4%B0">業務詳細</h3>
+<p><strong>インフラ基盤構築・設計</strong></p>
+<ul>
+<li>ECS・WAF・ALB・CloudFront・RDSを用いたAWS基盤のアプリケーション環境構築</li>
+<li>Step Function・Eventbridge・Glue・Redshiftを使用したコンバージョンデータ分析基盤の設計</li>
+<li>Terraformを使用したインフラ環境の設計・構築</li>
+</ul>
+<p><strong>非機能要件定義</strong></p>
+<ul>
+<li>監視設定・ログ保管期間の策定</li>
+<li>脆弱性対策によるWAFの導入</li>
+<li>分析基盤のセキュリティ対応</li>
+</ul>
+<p><strong>保守性改善・コスト最適化</strong></p>
+<ul>
+<li>Redshift Serverlessへの検討</li>
+<li>ログ保管をCloudwatch LogsからS3への移行</li>
+<li>他チームからの技術問い合わせ対応・サポート</li>
+</ul>
+<hr>
+<h3 id="%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%883%E5%A4%A7%E6%89%8B%E9%87%91%E8%9E%8D%E6%A9%9F%E9%96%A2%E3%81%A7%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B%E7%A4%BE%E5%93%A1%E7%94%A8%E3%82%A2%E3%83%97%E3%83%AA%E3%81%AE%E8%A8%AD%E8%A8%88%E9%81%8B%E7%94%A8%E4%BF%9D%E5%AE%88%E5%AF%BE%E5%BF%9C">プロジェクト3：大手金融機関で利用する社員用アプリの設計~運用保守対応</h3>
+<table>
+<thead>
+<tr>
+<th>期間</th>
+<th>担当</th>
+<th>インフラ環境</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025/4〜現在</td>
+<td>メンバー(インフラ2名)</td>
+<td>AWS</td>
+<td>AWS基盤の設計および構築、運用保守対応を実施</td>
+</tr>
+</tbody>
+</table>
+<h3 id="%E6%A5%AD%E5%8B%99%E8%A9%B3%E7%B4%B0">業務詳細</h3>
+<p><strong>インフラ基盤構築・設計</strong></p>
+<ul>
+<li>AWS基盤構築・運用</li>
+<li>ECS・ACM・ALB・CloudFront・RDS・WAFを用いたアプリケーション環境構築</li>
+<li>Terraformを使用したインフラ環境の設計・構築</li>
+</ul>
+<p><strong>運用改善・セキュリティ対応</strong></p>
+<ul>
+<li>Cloudwatch Logsを利用したログ保管設定の実現</li>
+<li>CloudWatch メトリクス監視とアラート設定による運用効率化</li>
+<li>金融機関向けセキュリティ要件に準拠したWAF設定</li>
+</ul>
+<p><strong>保守性改善・コスト最適化</strong></p>
+<ul>
+<li>DEV・STG環境のRDS・ECSの夜間休日自動停止によるコスト削減</li>
+<li>Terraformコードの変更背景をコミットメッセージで明記し、保守性と可読性を向上</li>
+<li>お客様からの問い合わせ対応・サポート</li>
+</ul>
+<hr>
+<h3 id="%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%884aws%E3%81%AE%E5%9F%BA%E7%9B%A4%E6%A7%8B%E7%AF%89%E3%82%84%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9%E3%82%B3%E3%82%B9%E3%83%88%E5%89%8A%E6%B8%9B%E3%82%84%E9%81%8B%E7%94%A8%E6%94%B9%E5%96%84%E5%AF%BE%E5%BF%9C">プロジェクト4：AWSの基盤構築やインフラコスト削減や運用改善対応</h3>
+<table>
+<thead>
+<tr>
+<th>期間</th>
+<th>担当</th>
+<th>インフラ環境</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025/4〜現在</td>
+<td>メンバー(インフラ1名)</td>
+<td>AWS</td>
+<td>自社サービスのAWS基盤の新規構築およびコスト改善や運用改善対応を実施</td>
+</tr>
+</tbody>
+</table>
+<h3 id="%E6%A5%AD%E5%8B%99%E8%A9%B3%E7%B4%B0">業務詳細</h3>
+<p><strong>インフラ基盤構築・設計</strong></p>
+<ul>
+<li>自社AIサービスのAWS基盤構築・運用</li>
+<li>ECS・ACM・ALB・CloudFront・RDSを用いたアプリケーション環境構築</li>
+<li>Terraformを使用したインフラ環境の設計・構築</li>
+</ul>
+<p><strong>運用改善・コスト最適化</strong></p>
+<ul>
+<li>RDS・ECSの夜間休日自動停止によるコスト削減</li>
+<li>CI/CDパイプラインのエラーログ詳細化・改善</li>
+<li>GitHub ActionsによるCI/CD構築・運用</li>
+</ul>
+<p><strong>コード品質向上・保守性改善</strong></p>
+<ul>
+<li>Terraformコードのリファクタリング実施</li>
+<li>変数名統一・別サービスコード混在の解消</li>
+<li>他チームからの技術問い合わせ対応・サポート</li>
+</ul>
+<hr>
+<h2 id="%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E5%8D%94%E6%A0%84%E6%83%85%E5%A0%B1">株式会社協栄情報</h2>
+<p><strong>期間</strong>: 2024/7〜2025/3 クラウド事業本部(クラウドエンジニア)</p>
+<h3 id="%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%881%E5%A4%A7%E6%89%8B%E6%90%8D%E5%AE%B3%E4%BF%9D%E9%99%BA%E4%BC%9A%E7%A4%BE%E3%81%AB%E3%81%A6aws%E5%9F%BA%E7%9B%A4%E3%81%AEosverup%E8%87%AA%E5%8B%95%E5%8C%96%E5%AF%BE%E5%BF%9C">プロジェクト1：大手損害保険会社にてAWS基盤のOSverUP自動化対応</h3>
+<table>
+<thead>
+<tr>
+<th>期間</th>
+<th>担当</th>
+<th>インフラ環境</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024/7〜2025/3</td>
+<td>メンバー(インフラ6名)</td>
+<td>AWS</td>
+<td>Ansible,Rubyを活用したOS設定自動化およびテスト、新規EC2構築によるAWSインフラ構成変更を担当</td>
+</tr>
+</tbody>
+</table>
+<h3 id="%E6%A5%AD%E5%8B%99%E8%A9%B3%E7%B4%B0">業務詳細</h3>
+<p><strong>インフラ基盤設計・構築</strong></p>
+<ul>
+<li>AWS上のOSバージョンアップ自動化において、設計から構築まで担当</li>
+<li>現行環境の構成調査、構成図・設計書作成</li>
+</ul>
+<p><strong>自動化ツール開発</strong></p>
+<ul>
+<li>設計書からAWS CLIコマンドへの自動変換機能実装(マクロ)</li>
+<li>OS設定自動化のためのAnsibleのテンプレートコードの開発および実装</li>
+<li>Rubyを使用したAWSリソース・OSテスト自動化のためのテンプレートコードの開発および実装</li>
+</ul>
+<p><strong>開発運用体制整備</strong></p>
+<ul>
+<li>GitHubを使用したソースコード管理およびブランチ戦略・運用ルール策定</li>
+<li>チーム開発効率化のためのドキュメント整備</li>
+</ul>
+<h3 id="%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%882%E8%87%AA%E7%A4%BE%E3%83%96%E3%83%AD%E3%82%B0%E6%8A%95%E7%A8%BF%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AEec2%E3%81%8B%E3%82%89rds%E3%81%B8%E3%81%AEdb%E7%A7%BB%E8%A1%8C">プロジェクト2：自社ブログ投稿データのEC2からRDSへのDB移行</h3>
+<table>
+<thead>
+<tr>
+<th>期間</th>
+<th>担当</th>
+<th>インフラ環境</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024/7〜2024/8</td>
+<td>メンバー(インフラ1名)</td>
+<td>AWS</td>
+<td>EC2上のmariaDBからRDS(MySQL)へのDB移行を担当</td>
+</tr>
+</tbody>
+</table>
+<h3 id="%E6%A5%AD%E5%8B%99%E8%A9%B3%E7%B4%B0">業務詳細</h3>
+<p><strong>移行計画・設計</strong></p>
+<ul>
+<li>既存WordPressの構成調査・分析</li>
+<li>EC2(MariaDB)からRDS(MySQL)への移行方法策定</li>
+</ul>
+<p><strong>移行作業実施</strong></p>
+<ul>
+<li>データベース移行作業の実行</li>
+<li>WordPressとRDS接続設定の変更</li>
+<li>移行後の動作確認・テスト実施</li>
+</ul>
+<p><strong>運用改善・効果</strong></p>
+<ul>
+<li>データベースのスケーラビリティ・可用性向上</li>
+<li>運用負荷軽減とパフォーマンス改善を実現</li>
+<li>今後の柔軟なスケーリング体制構築</li>
+</ul>
+<hr>
+<h2 id="%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%AA%E3%82%AF%E3%83%AB%E3%83%BC%E3%83%88%E3%82%B9%E3%82%BF%E3%83%83%E3%83%95%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%BD%E3%83%95%E3%83%88%E3%83%90%E3%83%B3%E3%82%AF%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE">株式会社リクルートスタッフィング(ソフトバンク株式会社)</h2>
+<p><strong>期間</strong>: 2023/9〜2024/6 法人事業統括 ソリューションエンジニアリング本部 UCデザイン統括部 コア事業推進室 第1課(ネットワークエンジニア)</p>
+<h3 id="%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%881%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%9E%E3%82%A4%E3%82%B0%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E7%B5%B1%E5%88%B6%E6%A5%AD%E5%8B%99">プロジェクト1：ネットワークマイグレーションの統制業務</h3>
+<table>
+<thead>
+<tr>
+<th>期間</th>
+<th>担当</th>
+<th>インフラ環境</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023/9〜2024/6</td>
+<td>メンバー(インフラ20名)</td>
+<td>オンプレミス</td>
+<td>ネットワーク新規回線への切り替え作業に伴う作業統制および障害対応などを担当</td>
+</tr>
+</tbody>
+</table>
+<h3 id="%E6%A5%AD%E5%8B%99%E8%A9%B3%E7%B4%B0">業務詳細</h3>
+<p><strong>統制業務・現場管理</strong></p>
+<ul>
+<li>ネットワークマイグレーション作業の統制・進行管理</li>
+<li>統制手順書に基づく現場作業員への指示・調整</li>
+<li>マイグレーション進捗状況の監視・報告</li>
+</ul>
+<p><strong>障害対応・技術作業</strong></p>
+<ul>
+<li>マイグレーション障害発生時の迅速な切り分け対応</li>
+<li>ルータでの設定変更作業の実施</li>
+<li>障害復旧に向けた技術的判断・対応</li>
+</ul>
+<p><strong>スキル習得・成長実績</strong></p>
+<ul>
+<li>IT初現場での積極的な技術キャッチアップ</li>
+<li>入社2ヶ月で単独統制対応を担当</li>
+<li>短期間での業務習得と責任業務への昇格を実現</li>
+</ul>
+<hr>
+<h2 id="%E3%83%86%E3%82%AF%E3%83%8B%E3%82%AB%E3%83%AB%E3%82%B9%E3%82%AD%E3%83%AB">テクニカルスキル</h2>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>サービス</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>OS</strong></td>
+<td>Amazon Linux2023<br>RHEL9</td>
+<td>システム設計から構築・運用まで担当</td>
+</tr>
+<tr>
+<td><strong>言語</strong></td>
+<td>Shell(Bash)<br>Ruby</td>
+<td>自動化スクリプト作成、cron設定、環境変数管理<br>Rspecを使用したテスト自動化コード開発経験</td>
+</tr>
+<tr>
+<td><strong>DB</strong></td>
+<td>MySQL<br>PostgreSQL<br>MariaDB</td>
+<td>データベース設計・構築、テーブル作成・操作、インデックス最適化、基本的なクエリチューニングが可能</td>
+</tr>
+<tr>
+<td><strong>Webサーバー</strong></td>
+<td>Nginx</td>
+<td>設定ファイル編集によるプロキシサーバー構築<br>リバースプロキシ・ロードバランシング設定</td>
+</tr>
+<tr>
+<td><strong>クラウド</strong></td>
+<td>AWS<br>Azure<br>GCP<br>Firebase</td>
+<td>システム設計から構築・運用まで担当<br>基本的な操作が可能<br>認証機能の実装経験</td>
+</tr>
+<tr>
+<td><strong>AWS</strong></td>
+<td>EC2・ECS・S3・VPC・IAM・<br>RDS・Cloudwatch・SystemsManager・<br>Route53・Codeシリーズ・EventBridge・<br>EFS・SNS・SES・Lambda・ACM・<br>Secrets Manager・Backup・CloudFront・<br>Kinesis・CloudTrail・AutoScaling・<br>ELB・CloudFormation・Cloudshell・WAF・<br>Redshift・Glue・<br>Step Function</td>
+<td>使用経験のあるサービスを列挙</td>
+</tr>
+<tr>
+<td><strong>Infrastructure as Code</strong></td>
+<td>Ansible<br>Terraform</td>
+<td>OS自動化設定用のテンプレートコード開発<br>AWS環境の初期構築から運用まで対応</td>
+</tr>
+<tr>
+<td><strong>コンテナ技術</strong></td>
+<td>Docker</td>
+<td>Dockerfile・Docker Compose作成<br>基本的なDockerコマンド操作・ログ分析</td>
+</tr>
+<tr>
+<td><strong>バージョン管理</strong></td>
+<td>GitHub<br>GitLab</td>
+<td>チーム開発でのソースコード管理<br>ブランチ戦略・運用ルール策定経験</td>
+</tr>
+<tr>
+<td><strong>CI/CD</strong></td>
+<td>GitHub Actions</td>
+<td>EC2・ECSへのフロント・サーバーデプロイ自動化<br>パイプライン構築・運用経験</td>
+</tr>
+<tr>
+<td><strong>モニタリングツール</strong></td>
+<td>NewRelic</td>
+<td>アラート設定</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="%E8%B3%87%E6%A0%BC%E3%81%AA%E3%81%A9">資格など</h2>
+<table>
+<thead>
+<tr>
+<th>No</th>
+<th>Certification</th>
+<th>Certificate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Databricks Certified Data Engineer Associate</td>
+<td><a href="https://credentials.databricks.com/6f0165cc-0341-4fcb-a0a5-a7a368e6bd69#acc.BA0MowNU">Link</a></td>
+</tr>
+<tr>
+<td>2</td>
+<td>AWS Certified Security – Specialty</td>
+<td><a href="https://www.credly.com/badges/653aaf3b-4a57-4de8-b9c4-b00291de14a5">Link</a></td>
+</tr>
+<tr>
+<td>3</td>
+<td>AWS Certified SysOps Administrator – Associate</td>
+<td><a href="https://www.credly.com/badges/700eb3d5-e5a6-4712-9b2a-269e34987b17">Link</a></td>
+</tr>
+<tr>
+<td>4</td>
+<td>AWS Certified DevOps Engineer – Professional</td>
+<td><a href="https://www.credly.com/badges/623fa0c4-9c3a-46f4-81c1-c4d8bf8aa1dd">Link</a></td>
+</tr>
+<tr>
+<td>5</td>
+<td>AWS Certified Developer – Associate</td>
+<td><a href="https://www.credly.com/badges/bb54ba51-a50c-4435-a8de-dc48c3e8277d">Link</a></td>
+</tr>
+<tr>
+<td>6</td>
+<td>AWS Certified Solutions Architect – Professional</td>
+<td><a href="https://www.credly.com/badges/d59e8494-24d2-4c9a-a118-0af0bd61d086">Link</a></td>
+</tr>
+<tr>
+<td>7</td>
+<td>AWS Certified Solutions Architect – Associate</td>
+<td><a href="https://www.credly.com/badges/149a99dd-9930-4bc1-b3f5-0a071d39efe1">Link</a></td>
+</tr>
+<tr>
+<td>8</td>
+<td>AWS Certified Cloud Practitioner</td>
+<td><a href="https://www.credly.com/badges/375d6392-db90-4b31-aad1-629f607e60e2">Link</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td>LPIC-1 Certification</td>
+<td><a href="https://www.credly.com/badges/7391e201-5cdf-41d4-824d-512ae13e5816/public_url">Link</a></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Cisco Certified Network Associate</td>
+<td><a href="https://www.credly.com/badges/002f75d7-ea68-468d-a759-a26f45c82d7e">Link</a></td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>
