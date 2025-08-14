@@ -57,9 +57,8 @@
 ### 業務詳細
 
 **インフラ要件定義・設計**
-- Azure Container Instances・Azure Web Application Firewall・Azure Application Gateway・Azure Front Door・Azure Database for MySQLを用いたAzure基盤のアプリケーション環境設計
+- Container Apps・Azure Cache for Redis・Azure・Azure Database for MySQLを⽤いたAzure基盤のアプリケーション環境設計
 - インフラ要件定義・非機能要件定義
-- Terraformを使用したインフラ環境の設計
 
 ---
 ### プロジェクト2：準大手ゼネコンのマンション売買予約管理システムおよび分析基盤の設計・構築
